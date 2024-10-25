@@ -65,9 +65,21 @@ transactions = [
     {"amount": 300, "type": "расход"},
     {"amount": 250, "type": "приход"}
 ]
+
 l1 = list(filter(lambda x: x['type'] == 'приход', transactions))
 
 l2 = list(map(lambda x: x['amount'] , l1))
 
 print(reduce(lambda a, b: a + b, l2))
 
+#3
+employees = [
+    {"name": "John", "salary": 5000},
+    {"name": "Emma", "salary": 4500},
+    {"name": "Sophia", "salary": 6000},
+    {"name": "Michael", "salary": 5500}
+]
+
+l1 = list(map(lambda x: x['salary'] , employees))
+
+print(reduce(lambda a, b: a + b, l1))
