@@ -1,7 +1,7 @@
 #1
-sentence = 'Мама мыла раму'
+sentence = 'Мама мыла рамhу 123'
 
-print(list(map(len, sentence.split())))
+print(list(map(lambda x: len(x), sentence.split())))
 
 #2
 sentence = 'Мама мыла раму'
