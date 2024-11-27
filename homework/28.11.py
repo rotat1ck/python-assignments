@@ -1,9 +1,6 @@
 def uniqueFileNames(s: set):
-    result = set()
-    for item in s:
-        if ".jpg" in item:
-            result.add(item)
-            
+    result = set(item for item in s if ".jpg" in item)
+    
     return result
 
 s = ("book_cover.jpg cover.png Book_cover.jpg "
